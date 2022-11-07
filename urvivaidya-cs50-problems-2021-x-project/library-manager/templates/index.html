@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    MY BOOKS
+{% endblock %}
+
+{% block main %}
+    <div class="container-fluid pt-5"><span class="table-font"><b>MY BOOKS - {{ total }}</b></span></div>
+      <div class="container pt-5">
+        <p><span class="transbox-p" style="font-size:large"><b>BORROWED</b></span></p>
+        <table class="table table-bordered">
+            <thead class="thead">
+                    <td><span class="nav-button">TITLE</span></td>
+                    <td><span class="nav-button">AUTHOR</span></td>
+                    <td><span class="nav-button">ISBN</span></td>
+                    <td><span class="nav-button">Borrower</span></td>
+            </thead>
+            <tbody class="transbox">
+                {% for borrowed in borrowed %}
+                <tr class="transbox-p">
+                    <td> {{ borrowed["title"] }}</td>
+                    <td> {{ borrowed["name"] }}</td>
+                    <td> {{ borrowed["isbn"] }}</td>
+                    <td> {{ borrowed["nameBorrower"] }} | {{ borrowed["contact"] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+            <tfoot class="tfoot">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tfoot>
+        </table>
+    </div>
+    <div class="container pt-5">
+        <p><span class="transbox-p" style="font-size:large"><b>ALL BOOKS</b></span></p>
+        <table class="table table-bordered">
+            <thead class="thead">
+                    <td><span class="nav-button">TITLE</span></td>
+                    <td><span class="nav-button">AUTHOR</span></td>
+                    <td><span class="nav-button">ISBN</span></td>
+            </thead>
+            <tbody class="transbox">
+                {% for libraryAll in libraryAll %}
+                <tr class="transbox-p">
+                    <td> {{ libraryAll["title"] }}</td>
+                    <td> {{ libraryAll["name"] }}</td>
+                    <td> {{ libraryAll["isbn"] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+            <tfoot class="tfoot">
+                <td></td>
+                <td></td>
+                <td></td>
+            </tfoot>
+        </table>
+    </div>
+{% endblock %}

@@ -1,0 +1,98 @@
+nav .navbar-brand
+{
+    /* size for brand */
+    font-size: xx-large;
+    font-family: Luminari, fantasy;
+    color: white !important;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+/* set an img as navbar background */
+.navbar
+{
+    background-image: url("/static/nav-background.jpg");
+    color: white;
+}
+
+.nav-button
+{
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-family: Luminari, fantasy;
+
+}
+
+main .form-control
+{
+    /* Center form controls */
+    display: inline-block;
+    /* Override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+main
+{
+    /* Scroll horizontally as needed */
+    overflow-x: auto;
+
+    /* Center contents */
+    text-align: center;
+}
+
+main img
+{
+    /* Constrain images on small screens */
+    max-width: 100%;
+}
+
+.tbody
+{
+    background-color: #76BBFF;
+    font-family: Luminari, fantasy;
+}
+
+
+/* set the bodys background */
+#body-background
+{
+    background-image: url("/static/body-back.png");
+    height:100vh;
+    width:100vw;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.btn , .thead, .tfoot
+{
+    background-image: url("/static/btn-background.jpg");
+    color:white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-family: Luminari, fantasy;
+}
+
+.table-font
+{
+    font-size: xx-large;
+    font-family: Luminari, fantasy;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: url("/static/table-font.jpg");
+
+}
+
+.transbox {
+    margin: 80px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.9;
+}
+
+.transbox-p {
+    margin: 5%;
+    font-weight: bold;
+    color: #330066;
+    text-align: center;
+}
